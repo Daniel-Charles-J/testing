@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React - Intro</title>
+</head>
+<body>
+    <div id="root"></div>
+
+    <!-- React cdn -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+
+<!-- Bable cdn -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<!-- Your custom script here -->
+<script type="text/babel">
+
+    const header = (
+        <header styles ={{
+            border : '2px solid orange',
+            colour : 'black',
+            fontSize : '18px'
+        }}>
+            <h1>React-Intro</h1>
+            <h2>Getting started</h2>
+            <h3>Reaact is a JavaScript Library</h3>
+        </header>
+        
+    )
+
+    const main =(
+        <main styles = {mainStyle}>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, recusandae.</p>
+        </main>
+    )
+    const mainStyle = {
+        border : '2px solid green',
+        colour : 'red',
+        fontSize : '18px',
+        padding : '1rem'
+    }
+
+    const footer =(
+        <footer>
+          <p>Copy right & copy 2022</p>
+          </footer>
+    )
+    const app = (
+        <div>
+            {header}
+            {main}
+            {footer}
+        </div>
+    )
+    ReactDom.Render(app,document.getElementById('root')); 
+    //our code starts here
+    console.log(React);
+</script>
+</body>
+</html>
